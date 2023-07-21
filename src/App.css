@@ -290,6 +290,77 @@
   }
 }
 
+/* work */
+
+.item {
+  position: relative;
+  width: 33.3333vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  background: #8f9aad95;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.item-wrapper:hover .img-overlay {
+top: -100%;
+}
+
+.item img {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0.5;
+  z-index: -1;
+  filter: brightness(70%);
+}
+
+.item-wrapper:hover img {
+transform: scale(1);
+}
+
+.after-overlay {
+  display:none;
+} 
+
+.item-wrapper:hover .after-overlay {
+  display:contents
+} 
+
+.item-name {
+  color: white;
+  font-family: "CanelaThinItalic";
+  margin-top: 10%
+}
+
+.id {
+  color: white;
+  font-family: "CanelaBold";
+  font-size: 20vh; 
+  margin-top: 23%;
+  }
+
+.front-text {
+text-align: left;
+}
+
+.back-text {
+  padding: 20% 20% 0 20%;
+}
+
+.bottom-text {
+  padding: 10% 5% 0 5%;
+}
 
 /* gsap */
 
