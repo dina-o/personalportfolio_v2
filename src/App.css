@@ -451,3 +451,19 @@ transform: translateY(60px)
   transform: translateX(30px);
   opacity: 0;
 }
+
+/* responsive */
+
+@media (max-height: 448px) or (max-width: 1031px) {
+  #work, #about, #contact, #home {
+    display: none;
+  }
+  .responsive {
+    font-family: "CanelaReg";
+    font-size: 5vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
