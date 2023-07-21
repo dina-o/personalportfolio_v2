@@ -35,15 +35,30 @@ import {Link} from 'react-scroll'
       <Divider borderWidth="1px" className='divider' style={{opacity: "0.5"}} />
    </Box>
 
-   <Heading style={{
+   <div className="hero-text">
+      <Heading style={{
             paddingTop: "8%",
             paddingLeft: "5%",
             fontWeight: 'lighter',
          }}
       fontFamily="CanelaThinItalic" fontSize='7vh'>creative</Heading>
 
-   <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DEVELOPER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-
+      <div className="container">
+         <div className="slider-up">
+            {/* make into map later */}
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DEVELOPER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>ARTIST <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DREAMER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>WRITER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>INNOVATOR <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>PROBLEM SOLVER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DESIGNER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>STORY TELLER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>THINKER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DEVELOPER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+         </div>
+      </div>
+   </div>
 
    <Text className="blurb" fontFamily="CanelaThinItalic" fontSize='4vh' style={{marginTop: "-9%", float: "right", paddingRight: "8%", paddingLeft: "60%"}}>
       &emsp;&emsp;&emsp;a passionate frontend / web developer with an eye for impressionism and a goal to create more elegant  products in the technology industry.
@@ -55,7 +70,6 @@ import {Link} from 'react-scroll'
          <span></span>
       </Link>
    
-
     </div>
      </>
     );
