@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: "CanelaThinItalic";
+  src: local("CanelaThinItalic"),
+  url("./fonts/CanelaFont/Canela-ThinItalic-Trial.otf") format('opentype')
+}
+
+@font-face {
+  font-family: "CanelaLightItalic";
+  src: local("CanelaLightItalic"),
+  url("./fonts/CanelaFont/Canela-LightItalic-Trial.otf") format('opentype')
+}
+
+@font-face {
+  font-family: "CanelaThin";
+  src: local("CanelaThin"),
+  url("./fonts/CanelaFont/Canela-Thin-Trial.otf") format('opentype')
+}
+
+@font-face {
+  font-family: "Maeslstrom";
+  src: local("Maeslstrom"),
+  url("./fonts/Maelstrom/TESTMAELSTROMSANS-BOLD.OTF") format('opentype')
+}
+
+@font-face {
+  font-family: "CanelaBold";
+  src: local("CanelaBold"), url("./fonts/CanelaFont/Canela-BoldItalic-Trial.otf")
+}
+
+@font-face {
+  font-family: "CanelaRegItalic";
+  src: local("CanelaRegItalic"), url("./fonts/CanelaFont/Canela-RegularItalic-Trial.otf")
+}
+
+@font-face {
+  font-family: "CanelaReg";
+  src: local("CanelaReg"), url("./fonts/CanelaFont/Canela-Regular-Trial.otf")
 }
