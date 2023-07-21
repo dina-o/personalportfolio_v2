@@ -16,9 +16,7 @@ const Work = () => {
 
     <h1 style={{backgroundColor: "#8B978E", fontFamily: "CanelaRegItalic", color: "white", padding: "3% 0 1% 1%", fontSize: "3vh"}}>work experiences</h1> 
 
-
       <HStack>
-
         <div className="item">
           <div className="item-wrapper">
             <img src={image1}></img>
@@ -92,8 +90,7 @@ const Work = () => {
                 </VStack>
             </div>
           </div>
-        </div>
-        
+        </div>  
         </HStack>
         </div>  
     </>

@@ -290,6 +290,22 @@
   }
 }
 
+/* footer  */
+
+.footer {
+  font-family: "CanelaLightItalic";
+  font-size:10vh;
+  padding-top: 3%;
+  margin-left: 3%;
+}
+
+.question {
+  padding-top: 3%;
+  text-align: center;
+  font-family: "CanelaThinItalic";
+  font-size:6vh;
+}
+
 /* work */
 
 .item {
