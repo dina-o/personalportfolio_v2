@@ -52,7 +52,7 @@ const Work = () => {
               <div className="bottom-text">
                 <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                 <br />
-                <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>Angular JS, TypeScript, Cinchy DB, SQL</Text>
+                <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>Angular JS / TypeScript / Cinchy DB / SQL</Text>
               </div>
             </VStack>
             <div className="img-overlay">
@@ -77,7 +77,7 @@ const Work = () => {
               <div className="bottom-text">
                 <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
                 <br />
-                <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS, TypeScript, Chakra UI, Temporal</Text>
+                <Text className="after-overlay" style={{fontSize: "4vh", paddingLeft: "20px" }}>React JS / TypeScript / Chakra UI / Temporal</Text>
               </div>
             </VStack>
             <div className="img-overlay">

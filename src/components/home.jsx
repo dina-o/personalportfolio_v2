@@ -156,8 +156,7 @@ import gsap from 'gsap'
 
    <Text className="hours" fontSize='17vh' fontFamily="Maeslstrom" style={{float: "right", paddingRight: "2%", marginTop: "-3%"}}>{hours}</Text>
 
-
-<div className="hero-text">
+   <div className="hero-text">
       <Heading style={{
             paddingTop: "8%",
             paddingLeft: "5%",

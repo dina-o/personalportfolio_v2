@@ -13,7 +13,6 @@ const About = () => {
       >   
       <Flex direction="column" style={{marginLeft: "15%", marginRight: "15%", paddingTop: "5%"}}>
 
-      <div className="artist-box">
         <Text style={{fontFamily: "CanelaReg", fontSize: "8vh"}}>Dina Orucevic &nbsp;<span style={{fontFamily: "CanelaThin", fontSize: "4vh"}}>b. Waterloo 2003</span></Text>
         <Text style={{fontFamily: "CanelaLightItalic", fontSize: "6vh"}}>how do you do?, &nbsp; <span style={{fontFamily: "CanelaThin", fontSize: "4vh"}}>2023</span></Text>
 
@@ -26,9 +25,6 @@ const About = () => {
         <br/> <br/>
         Outside of development, I'm an avid reader, writer, corgi fanatic, and film photographer. I'm always looking for more opportunities to develop my skills further! Currently searching for Winter 2024 SWE / frontend / web developer roles ⁠— check out my <a target="_blank" href="https://drive.google.com/file/d/1dPlXI9vHuhxxjlL5t8cv1IKQ3U8gRj6i/view?usp=sharing"><u>resume</u></a> :)
         </Text>
-
-        <span></span>
-      </div>
 
         <Text style={{fontFamily: "CanelaLightItalic", fontSize: "6vh", marginTop: "7%"}}>my current favourites</Text>
         <div className="bubbles">
@@ -49,7 +45,7 @@ const About = () => {
             </div>
         </div>
 
-        </Flex> 
+      </Flex> 
         
         </div>  
     </>
