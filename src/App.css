@@ -306,6 +306,43 @@
   font-size:6vh;
 }
 
+/* MARQUEE */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  background: #CDD2DD;
+  height:11vh;
+  font-family: "CanelaLightItalic";
+  color: white;
+  margin-top: 3%;
+  font-size: 5vh;
+  font-weight: bolder;
+  line-height: 2;
+  gap: 1rem;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 10s linear infinite;
+}
+
 /* work */
 
 .item {

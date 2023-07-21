@@ -27,6 +27,20 @@ const Footer = () => {
           }}
         ></div>
 
+        <div class="marquee">
+          <Stack class="marquee-content scroll">
+            {Array.from({ length: 5 }).map(() => (
+            <Text>&nbsp; GET &nbsp; IN &nbsp; TOUCH &emsp; ✷ </Text>
+            ))}
+          </Stack>
+
+          <Stack class="marquee-content scroll" aria-hidden="true">
+            {Array.from({ length: 5 }).map(() => (
+            <Text>&nbsp; GET &nbsp; IN &nbsp; TOUCH &emsp; ✷ </Text>
+            ))}
+          </Stack>
+        </div>
+
         <VStack alignItems="left" className="footer" zIndex="2">
         <Link style={{cursor: 'pointer', zIndex: "2"}} to="home" spy={true} smooth={true} offset={0} duration={500} color="black">/ Home</Link>
           <Box width="95%" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
