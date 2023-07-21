@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import {Link} from 'react-scroll'
 import gsap from 'gsap'
 
- 
  const Home = () => {
    const tl = gsap.timeline();
 
@@ -57,8 +56,6 @@ import gsap from 'gsap'
       ease: "power2.Out",
     })
 
-
-    
    const [hours, setHours] = useState('');
    const [minutes, setMinutes] = useState('');
    const [textSleeping, setTextSleeping] = useState('');
@@ -102,6 +99,20 @@ import gsap from 'gsap'
       return () => cancelAnimationFrame(animationFrameId);
    }, []);
 
+
+   const keyWord = [
+      {label: 'DEVELOPER', value: "DEVELOPER"},
+      {label: 'ARTIST', value: "ARTIST"},
+      {label: 'DREAMER', value: "DREAMER"},
+      {label: 'WRITER', value: "WRITER"},
+      {label: 'INNOVATOR', value: "INNOVATOR"},
+      {label: 'PROBLEM SOLVER', value: "PROBLEM SOLVER"},
+      {label: 'DESIGNER', value: "DESIGNER"},
+      {label: 'STORY TELLER', value: "STORY TELLER"},
+      {label: 'THINKER', value: "THINKER"},
+      {label: 'DEVELOPER', value: "DEVELOPER"}
+   ]
+   
     return (
      <> 
      <div id="home" className='grayscale-filter' style={{ 
@@ -156,17 +167,9 @@ import gsap from 'gsap'
 
       <div className="container">
          <div className="slider-up">
-            {/* make into map later */}
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DEVELOPER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>ARTIST <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DREAMER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>WRITER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>INNOVATOR <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>PROBLEM SOLVER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DESIGNER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>STORY TELLER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>THINKER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
-            <Heading style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>DEVELOPER <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+        { keyWord.map(({label, value}) => (
+            <Heading key={label} style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='13vh'>{value} <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+         )) }
          </div>
       </div>
    </div>
@@ -181,7 +184,6 @@ import gsap from 'gsap'
          <span></span>
       </Link>
    
-
     </div>
      </>
     );
