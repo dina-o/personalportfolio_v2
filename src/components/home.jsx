@@ -1,10 +1,53 @@
 import background from '../images/back.jpg'
 import {Heading, Flex, Spacer, HStack, Stack, Divider, Box, Text} from '@chakra-ui/react'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-scroll'
 
  
  const Home = () => {
+
+   const [hours, setHours] = useState('');
+   const [minutes, setMinutes] = useState('');
+   const [textSleeping, setTextSleeping] = useState('');
+ 
+   function updateTime() {
+     const date = new Date();
+     const showHours = String(date.getHours() % 12 || 12).padStart(2, '0');
+     const textAmPm = date.getHours() >= 12 ? 'PM' : 'AM';
+     const showMinutes = ':' + String(date.getMinutes()).padStart(2, '0') + textAmPm;
+ 
+     let textSleeping = '';
+     if (
+       date.getHours() === 22 ||
+       date.getHours() === 23 ||
+       date.getHours() === 24 ||
+       date.getHours() === 0 ||
+       date.getHours() === 1 ||
+       date.getHours() === 2 ||
+       date.getHours() === 3 ||
+       date.getHours() === 4 ||
+       date.getHours() === 5 ||
+       date.getHours() === 6 ||
+       date.getHours() === 7
+     ) {
+       textSleeping = '(i may be asleep now) ✷';
+     }
+ 
+     setHours(showHours);
+     setMinutes(showMinutes);
+     setTextSleeping(textSleeping);
+   }
+ 
+   function updateWithAnimationFrame() {
+     updateTime();
+     requestAnimationFrame(updateWithAnimationFrame);
+   }
+ 
+   useEffect(() => {
+     updateTime();
+      const animationFrameId = requestAnimationFrame(updateWithAnimationFrame);
+      return () => cancelAnimationFrame(animationFrameId);
+   }, []);
 
     return (
      <> 
@@ -34,6 +77,20 @@ import {Link} from 'react-scroll'
    }}>
       <Divider borderWidth="1px" className='divider' style={{opacity: "0.5"}} />
    </Box>
+
+   <Stack style={{float: "right", paddingRight: "15%", marginTop: "-1.5%"}}>
+      <Text className="minutes" fontSize='5vh' fontFamily="CanelaBold">{minutes}</Text>
+      
+      <Stack fontSize='3.5vh' spacing={0.1} direction='column' style={{marginTop: "-5%", lineHeight: "1.2"}} className="time-text">
+         <Text fontFamily="CanelaThin" style={{
+               fontWeight: 'lighter',
+            }}>available for work</Text>
+
+         <Text fontFamily="CanelaThinItalic">{textSleeping}</Text>
+      </Stack>
+   </Stack>
+
+   <Text className="hours" fontSize='17vh' fontFamily="Maeslstrom" style={{float: "right", paddingRight: "2%", marginTop: "-3%"}}>{hours}</Text>
 
    <div className="hero-text">
       <Heading style={{
