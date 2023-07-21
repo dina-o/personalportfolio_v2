@@ -2,10 +2,63 @@ import background from '../images/back.jpg'
 import {Heading, Flex, Spacer, HStack, Stack, Divider, Box, Text} from '@chakra-ui/react'
 import React, { useState, useEffect } from 'react';
 import {Link} from 'react-scroll'
+import gsap from 'gsap'
 
  
  const Home = () => {
+   const tl = gsap.timeline();
 
+   tl.to(".blurb",{
+     opacity: 1,
+     y: 0,
+     delay: 0.5,
+     ease: "power3.Out",  
+   });
+
+   gsap.to(".circle", 1, {
+      scale: 1,
+      ease: 'power3.inOut',
+      delay: 1,
+    })
+
+   gsap.to(".heading",{
+      y: 0,
+      opacity: 1,
+      ease: "power2.Out", 
+    });
+
+    gsap.to(".watermark",{
+      y: 0,
+      opacity: 1,
+      ease: "power1.Out", 
+    });
+
+    tl.to(".hero-text", {
+      y: 0,
+      opacity: 1,
+      ease: "power2.Out", 
+    })
+
+    tl.to(".hours", {
+      y: 0,
+      opacity: 1,
+      ease: "power2.Out",
+    })
+
+    tl.to(".minutes", {
+      y: 0,
+      opacity: 1,
+      ease: "power2.Out",
+    })
+
+    tl.to(".time-text", {
+      x: 0,
+      opacity: 1,
+      ease: "power2.Out",
+    })
+
+
+    
    const [hours, setHours] = useState('');
    const [minutes, setMinutes] = useState('');
    const [textSleeping, setTextSleeping] = useState('');
@@ -62,7 +115,7 @@ import {Link} from 'react-scroll'
    }}>
 
    <Flex>
-      <Heading fontSize='4.5vh' fontFamily="CanelaLightItalic" style={{marginTop: '3%', marginLeft: '3%', fontWeight: 'lighter', color: 'black', zIndex: '1'}}>Dina Orucevic</Heading>
+      <Heading className="watermark" fontSize='4.5vh' fontFamily="CanelaLightItalic" style={{marginTop: '3%', marginLeft: '3%', fontWeight: 'lighter', color: 'black', zIndex: '1'}}>Dina Orucevic</Heading>
       <Spacer />
       <HStack className="heading" spacing='2rem' fontSize= '4vh' fontFamily="CanelaLightItalic" style={{marginTop: '4.5%', marginRight: '3%', fontWeight: 'lighter', color: 'black', zIndex: '1'}}>
          <Link to="about" spy={true} smooth={true} offset={50} duration={500}  className= "menu"> <a className= "values"> about </a> </Link>
@@ -77,7 +130,7 @@ import {Link} from 'react-scroll'
    }}>
       <Divider borderWidth="1px" className='divider' style={{opacity: "0.5"}} />
    </Box>
-
+   
    <Stack style={{float: "right", paddingRight: "15%", marginTop: "-1.5%"}}>
       <Text className="minutes" fontSize='5vh' fontFamily="CanelaBold">{minutes}</Text>
       
@@ -92,7 +145,8 @@ import {Link} from 'react-scroll'
 
    <Text className="hours" fontSize='17vh' fontFamily="Maeslstrom" style={{float: "right", paddingRight: "2%", marginTop: "-3%"}}>{hours}</Text>
 
-   <div className="hero-text">
+
+<div className="hero-text">
       <Heading style={{
             paddingTop: "8%",
             paddingLeft: "5%",
@@ -117,16 +171,17 @@ import {Link} from 'react-scroll'
       </div>
    </div>
 
-   <Text className="blurb" fontFamily="CanelaThinItalic" fontSize='4vh' style={{marginTop: "-9%", float: "right", paddingRight: "8%", paddingLeft: "60%"}}>
+      <Text className="blurb" fontFamily="CanelaThinItalic" fontSize='4vh' style={{marginTop: "-9.5%", float: "right", paddingRight: "8%", paddingLeft: "60%"}}>
       &emsp;&emsp;&emsp;a passionate frontend / web developer with an eye for impressionism and a goal to create more elegant  products in the technology industry.
       </Text>
 
-      <Link class="circle button" to="about">
+      <Link class="circle button" to="about" spy={true} smooth={true} offset={50} duration={500}>
          <span></span>
          <span></span>
          <span></span>
       </Link>
    
+
     </div>
      </>
     );

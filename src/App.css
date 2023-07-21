@@ -6,8 +6,6 @@
   font-family: "CanelaLightItalic";
 }
 
-/* home */
-
 .grayscale-filter {
   position: relative;
   background-size: cover;
@@ -49,6 +47,11 @@
   color: rgb(82, 63, 87);
   cursor: pointer;
 }
+
+/* .text-layer { // text looks cool with this effect lol
+  mix-blend-mode: exclusion;
+  color: white;
+} */
 
 .circle {
   position: relative;
@@ -125,45 +128,82 @@
 }
 
 .container {
-  position: relative;
-  height: 15vh;
-  overflow: hidden;
-  margin-top: 0.5%;
+    position: relative;
+    height: 15vh;
+    overflow: hidden;
+    margin-top: 0.5%;
 }
 
 .slider-up {
-  animation: slide-up 20s ease infinite;
+    animation: slide-up 20s ease infinite;
 }
 
 @keyframes slide-up {
-  0%, 10% {
-      transform: translateY(0);
-  }
-  10%, 20% {
-      transform: translateY(-10%);
-  }
-  20%, 30% {
-      transform: translateY(-20%);
-  }
-  30%, 40% {
-      transform: translateY(-30%);
-  }
-  40%, 50% {
-      transform: translateY(-40%);
-  }
-  50%, 60% {
-      transform: translateY(-50%);
-  }
-  60%, 70% {
-      transform: translateY(-60%);
-  }
-  70%, 80% {
-      transform: translateY(-70%);
-  }
-  80%, 90% {
-      transform: translateY(-80%);
-  }
-  100%{
-      transform: translateY(-90%);
-  }
+    0%, 10% {
+        transform: translateY(0);
+    }
+    10%, 20% {
+        transform: translateY(-10%);
+    }
+    20%, 30% {
+        transform: translateY(-20%);
+    }
+    30%, 40% {
+        transform: translateY(-30%);
+    }
+    40%, 50% {
+        transform: translateY(-40%);
+    }
+    50%, 60% {
+        transform: translateY(-50%);
+    }
+    60%, 70% {
+        transform: translateY(-60%);
+    }
+    70%, 80% {
+        transform: translateY(-70%);
+    }
+    80%, 90% {
+        transform: translateY(-80%);
+    }
+    100%{
+        transform: translateY(-90%);
+    }
+}
+
+/* gsap */
+
+.blurb {
+opacity: 0;
+transform: translateY(60px)
+}
+
+.heading {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.watermark {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.hero-text {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.hours {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.minutes {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.time-text {
+  transform: translateX(30px);
+  opacity: 0;
 }
