@@ -63,9 +63,9 @@ const Footer = () => {
             fontSize="3vh"
             fontFamily="CanelaLightItalic"
             style={{
-              marginTop: '2%',
+              marginTop: '3%',
               marginLeft: '3%',
-              marginBottom: "2%",
+              marginBottom: '2%',
               fontWeight: 'lighter',
               color: 'black',
               zIndex: '1',
@@ -81,17 +81,17 @@ const Footer = () => {
             fontSize="3vh"
             fontFamily="CanelaLightItalic"
             style={{
-              marginTop: '2%',
+              marginTop: '3%',
               marginRight: '3%',
-              marginBottom: "2%",
+              marginBottom: '2%',
               fontWeight: 'lighter',
               color: 'black',
               zIndex: '1',
               lineHeight: '1',
             }}
           >
-            <Link href='https://dina.oorucevic@gmail.com' color="black" isExternal style={{textDecoration: "none"}}>email</Link>
-            <Link href="https://linkedin.com/in/dinaorucevic" color="black" isExternal style={{textDecoration: "none"}}>linkedIn</Link>
+            <a target="_blank" href='mailto:dina.oorucevic@gmail.com' color="black" style={{textDecoration: "none"}}>email</a>
+            <a target="_blank" href="https://linkedin.com/in/dinaorucevic" color="black" style={{textDecoration: "none"}}>linkedIn</a>
           </VStack>
         </Flex>
       </div>

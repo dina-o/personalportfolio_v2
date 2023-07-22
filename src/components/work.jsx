@@ -33,7 +33,7 @@ const Work = () => {
             <div className="img-overlay">
                 <VStack className="item-name">
                   <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "15%", fontSize: "7vh"}}>Payments Innovation Developer </Text>
+                    <Text style={{paddingLeft: "10%", fontSize: "6vh"}}>Payments Innovation Developer </Text>
                     <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>TD Bank</Text>
                   </VStack>
                   <Text className="id">1</Text>
@@ -58,7 +58,7 @@ const Work = () => {
             <div className="img-overlay">
                 <VStack className="item-name">
                   <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "15%", fontSize: "7vh"}}>Software Engineer </Text>
+                    <Text style={{paddingLeft: "15%", fontSize: "6vh"}}>Software Engineer </Text>
                     <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>TD Bank</Text>
                   </VStack>
                   <Text className="id">2</Text>
@@ -72,7 +72,7 @@ const Work = () => {
             <img src={image3}></img>
             <VStack style={{fontFamily: "CanelaRegItalic"}}>
               <div className="back-text">
-                <Text className="after-overlay" style={{fontSize: "5vh"}}>current internship...</Text>
+                <Text className="after-overlay" style={{fontSize: "5vh"}}>Designed and developed end to end proof of concepts for Visa's Pay by Bank feature and Interac.</Text>
               </div>
               <div className="bottom-text">
                 <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
@@ -83,7 +83,7 @@ const Work = () => {
             <div className="img-overlay">
                 <VStack className="item-name">
                   <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "15%", fontSize: "7vh"}}>Full Stack Developer </Text>
+                    <Text style={{paddingLeft: "15%", fontSize: "6vh"}}>Full Stack Developer </Text>
                     <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>RFA Labs</Text>
                   </VStack>
                   <Text className="id">3</Text>
