@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1aee0725.css",
+    "main.js": "/static/js/main.79600e9f.js",
+    "static/js/787.5e698869.chunk.js": "/static/js/787.5e698869.chunk.js",
+    "static/media/footer.png": "/static/media/footer.d938a1d898acbc7f79fe.png",
+    "static/media/overlay1.jpg": "/static/media/overlay1.234e2aff3cadb9e70c58.jpg",
+    "static/media/back.jpg": "/static/media/back.e8919b13058a36a5f357.jpg",
+    "static/media/overlay3.jpg": "/static/media/overlay3.42e5a8a894feba7e7368.jpg",
+    "static/media/overlay2.jpg": "/static/media/overlay2.6bf2a40b03999cd5d3ee.jpg",
+    "static/media/Canela-BoldItalic-Trial.otf": "/static/media/Canela-BoldItalic-Trial.50a15ec74f0a61b964e2.otf",
+    "static/media/Canela-RegularItalic-Trial.otf": "/static/media/Canela-RegularItalic-Trial.cf1c1dae48cc00c15739.otf",
+    "static/media/Canela-LightItalic-Trial.otf": "/static/media/Canela-LightItalic-Trial.847d7263a6fdeff07f0a.otf",
+    "static/media/Canela-Regular-Trial.otf": "/static/media/Canela-Regular-Trial.edc32bd0aadc5ef6691b.otf",
+    "static/media/Canela-Thin-Trial.otf": "/static/media/Canela-Thin-Trial.be1d70ed5338a2dc3ed7.otf",
+    "static/media/Canela-ThinItalic-Trial.otf": "/static/media/Canela-ThinItalic-Trial.e3b86cc671509e0aefcd.otf",
+    "static/media/TESTMAELSTROMSANS-BOLD.OTF": "/static/media/TESTMAELSTROMSANS-BOLD.7ac9b127be02eb7db1fb.OTF",
+    "index.html": "/index.html",
+    "main.1aee0725.css.map": "/static/css/main.1aee0725.css.map",
+    "main.79600e9f.js.map": "/static/js/main.79600e9f.js.map",
+    "787.5e698869.chunk.js.map": "/static/js/787.5e698869.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1aee0725.css",
+    "static/js/main.79600e9f.js"
+  ]
+}
