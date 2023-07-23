@@ -58,7 +58,7 @@ const Work = () => {
             <div className="img-overlay">
                 <VStack className="item-name">
                   <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "15%", fontSize: "6vh"}}>Software <br/> Engineer </Text>
+                    <Text style={{fontSize: "6vh"}}>Software <br/> Engineer </Text>
                     <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>TD Bank</Text>
                   </VStack>
                   <Text className="id">2</Text>
@@ -83,7 +83,7 @@ const Work = () => {
             <div className="img-overlay">
                 <VStack className="item-name">
                   <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "15%", fontSize: "6vh"}}>Full Stack <br/> Developer </Text>
+                    <Text style={{fontSize: "6vh"}}>Full Stack <br/> Developer </Text>
                     <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>RFA Labs</Text>
                   </VStack>
                   <Text className="id">3</Text>

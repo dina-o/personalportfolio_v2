@@ -53,7 +53,7 @@
 .circle {
   position: relative;
   float: right;
-  margin-right: 5%;
+  margin-right: 6%;
   width: 9vw;
   height: 7vh;
   display: flex;
@@ -99,11 +99,11 @@
 }
 
 .circle::before{
-  content: "read more!";
+  content: "read more";
   color: rgb(255, 255, 255);
   font-size: 3vh;
   font-family: "CanelaReg";
-  margin-left: 10%;
+  margin-left: 11%;
 }
 
 .circle:hover {
