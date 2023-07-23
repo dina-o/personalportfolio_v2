@@ -156,10 +156,8 @@ import gsap from 'gsap'
 
    <Text className="hours" fontSize='17vh' fontFamily="Maeslstrom" style={{float: "right", paddingRight: "2%", marginTop: "-2.2%"}}>{hours}</Text>
 
-   <div className="hero-text">
+   <Stack style={{paddingLeft: "5%", paddingTop: "8%"}} className="hero-text">
       <Heading style={{
-            paddingTop: "8%",
-            paddingLeft: "5%",
             fontWeight: 'lighter',
          }}
       fontFamily="CanelaThinItalic" fontSize='7vh'>creative</Heading>
@@ -167,13 +165,13 @@ import gsap from 'gsap'
       <div className="container">
          <div className="slider-up">
         { keyWord.map(({label, value}) => (
-            <Heading key={label} style={{paddingLeft: "5%"}} fontFamily="CanelaThinItalic" fontSize='6vw'>{value} <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
+            <Heading key={label} fontFamily="CanelaThinItalic" fontSize='6vw'>{value} <a style={{ fontSize: "4vh", color: '#AFD8BB'}}>✷</a></Heading>
          )) }
          </div>
       </div>
-   </div>
+   </Stack>
 
-   <div style={{float: "right", marginTop: "-12%"}}>
+   <div style={{float: "right", marginTop: "-11%"}}>
       <Text className="blurb" fontFamily="CanelaThinItalic" fontSize='4vh' style={{paddingRight: "4%", paddingLeft: "63%"}}>
       &emsp;&emsp;&emsp;a passionate frontend / web developer with an eye for impressionism and a goal to create more elegant  products in the technology industry.
       </Text>
