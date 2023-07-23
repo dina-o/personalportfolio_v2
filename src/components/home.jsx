@@ -171,7 +171,7 @@ import gsap from 'gsap'
       </div>
    </Stack>
 
-   <div style={{float: "right", marginTop: "-11%"}}>
+   <div style={{float: "right", marginTop: "-11.5%"}}>
       <Text className="blurb" fontFamily="CanelaThinItalic" fontSize='4vh' style={{paddingRight: "4%", paddingLeft: "63%"}}>
       &emsp;&emsp;&emsp;a passionate frontend / web developer with an eye for impressionism and a goal to create more elegant  products in the technology industry.
       </Text>
