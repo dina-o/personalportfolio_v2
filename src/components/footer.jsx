@@ -46,7 +46,7 @@ const Footer = () => {
           <Box width="95%" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
             <Divider borderWidth="1px" />
           </Box>
-          <Link style={{cursor: 'pointer', zIndex: "2"}} to="about" spy={true} smooth={true} offset={0} duration={500} color="black">/ About</Link>
+          <Link style={{cursor: 'pointer', zIndex: "2"}} to="about" spy={true} smooth={true} offset={50} duration={500} color="black">/ About</Link>
           <Box width="95%" style={{ marginLeft: 'auto', marginRight: 'auto' }}>
             <Divider borderWidth="1px"/>
           </Box>

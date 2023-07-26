@@ -130,7 +130,7 @@ import gsap from 'gsap'
       <Spacer />
       <HStack className="heading" spacing='2rem' fontSize= '4vh' fontFamily="CanelaLightItalic" style={{marginTop: '4.5%', marginRight: '3%', fontWeight: 'lighter', color: 'black', zIndex: '1'}}>
          <Link to="about" spy={true} smooth={true} offset={50} duration={500}  className= "menu"> <a className= "values"> about </a> </Link>
-         <Link to="work" spy={true} smooth={true} offset={50} duration={500} className= "menu"> <a className= "values"> work </a> </Link>
+         <Link to="work" spy={true} smooth={true} offset={0} duration={500} className= "menu"> <a className= "values"> work </a> </Link>
          <Link to="contact" spy={true} smooth={true} offset={0} duration={500} className= "menu"> <a className= "values"> contact </a> </Link>
       </HStack>
    </Flex>
