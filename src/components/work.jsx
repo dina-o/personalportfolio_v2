@@ -32,9 +32,9 @@ const Work = () => {
             </VStack>
             <div className="img-overlay">
                 <VStack className="item-name">
-                  <VStack alignItems="left" className="front-text">
-                    <Text style={{paddingLeft: "10%", fontSize: "6vh"}}>Payments Innovation Developer </Text>
-                    <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>TD Bank</Text>
+                  <VStack alignItems="left">
+                    <Text style={{textAlign: 'center', fontSize: "6vh"}}>Payments Innovation <br/> Developer </Text>
+                    <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>TD Bank</Text>
                   </VStack>
                   <Text className="id">1</Text>
                 </VStack>
@@ -57,9 +57,9 @@ const Work = () => {
             </VStack>
             <div className="img-overlay">
                 <VStack className="item-name">
-                  <VStack alignItems="left" className="front-text">
+                  <VStack alignItems="left" >
                     <Text style={{fontSize: "6vh"}}>Software <br/> Engineer </Text>
-                    <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>TD Bank</Text>
+                    <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>TD Bank</Text>
                   </VStack>
                   <Text className="id">2</Text>
                 </VStack>
@@ -72,7 +72,7 @@ const Work = () => {
             <img src={image3}></img>
             <VStack style={{fontFamily: "CanelaRegItalic"}}>
               <div className="back-text">
-                <Text className="after-overlay" style={{fontSize: "5vh"}}>Designed and developed end to end proof of concepts for Visa's Pay by Bank feature and Interac.</Text>
+                <Text className="after-overlay" style={{fontSize: "5vh"}}>Reproducing and refactoring wireframes on the frontend for mortgage application summary pages.</Text>
               </div>
               <div className="bottom-text">
                 <Text className="after-overlay"  style={{fontSize: "6vh", color: "#6A737E"}}>✷✷✷</Text>
@@ -82,9 +82,9 @@ const Work = () => {
             </VStack>
             <div className="img-overlay">
                 <VStack className="item-name">
-                  <VStack alignItems="left" className="front-text">
+                  <VStack alignItems="left" >
                     <Text style={{fontSize: "6vh"}}>Full Stack <br/> Developer </Text>
-                    <Text style={{color: "black", fontSize: "4vh", paddingLeft: "15%"}}>RFA Labs</Text>
+                    <Text style={{color: "black", fontSize: "4vh", textAlign: 'center'}}>RFA Labs</Text>
                   </VStack>
                   <Text className="id">3</Text>
                 </VStack>
